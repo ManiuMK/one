@@ -9,11 +9,16 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="" method="post">
+    <form action="conn.php" method="post">
 
         <div id="box">
             <div class="p1">
                 <img src="zd/tomato.png">
+                <?php 
+                require "conn.php"
+
+                echo "Ilosc: " . $row["ziemniak"];
+                ?>
                 <input type="submit" value="wybierz">
             </div>
             <div class="p1">
@@ -32,7 +37,6 @@
                 <input type="submit" value="wybierz">
             </div>
         </div>
-
     </form>
 </body>
 </html>
